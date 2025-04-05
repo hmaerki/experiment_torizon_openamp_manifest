@@ -6,7 +6,7 @@
   <default sync-j="4"/>
 
   <project name="bitbake.git" path="layers/openembedded-core/bitbake" remote="oe" revision="046871d9fd76efdca7b72718b328d8f545523f7e" upstream="2.0"/>
-  <project name="meta-openembedded.git" path="layers/meta-openembedded" remote="oe" revision="084df16f561ebce5aea2ae9241cc500247771ef3" upstream="kirkstone"/>
-  <project name="meta-yocto" path="layers/meta-yocto" remote="yocto" revision="af63d6abd596da87881485fcfcfb21e6847f1801" upstream="kirkstone"/>
-  <project name="openembedded-core.git" path="layers/openembedded-core" remote="oe" revision="1172a71f2104454a13e64886adbdb381aa8d6e0e" upstream="kirkstone"/>
+  <project name="meta-openembedded.git" path="layers/meta-openembedded" remote="oe" revision="f8dddbfcbfe502cb71375a7a907e61a92e8d4474" upstream="kirkstone"/>
+  <project name="meta-yocto" path="layers/meta-yocto" remote="yocto" revision="3dd438c749099f2a5e808c4690d7ea767263e5b5" upstream="kirkstone"/>
+  <project name="openembedded-core.git" path="layers/openembedded-core" remote="oe" revision="f23d1bfca0ea57150c397bc2e495191fb61423d0" upstream="kirkstone"/>
 </manifest>
