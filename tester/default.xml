@@ -6,18 +6,18 @@
 
   <remote alias="repo" fetch="https://github.com/meta-qt5" name="githq"/>
   <remote alias="repo" fetch="https://github.com/toradex" name="githt"/>
-  <remote alias="repo" fetch="https://gitlab.int.toradex.com/rd/testing/som-fct" name="tdx-int"/>
+  <remote alias="repo" fetch="https://gitlab.com/toradex/rd/testing/som-fct" name="gitltdx"/>
 
   <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="5ef3a0ffd3324937252790266e2b2e64d33ef34f" upstream="dunfell"/>
   <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="8ffadb517be04a0b19ef1f5d5299a8c581f87383" upstream="dunfell-5.x.y"/>
   <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="b72627047958f6b517760e32773cc00057c2499c" upstream="dunfell-5.x.y"/>
   <project dest-branch="dunfell-5.x.y" name="meta-toradex-tezi.git" path="layers/meta-toradex-tezi" remote="githt" revision="9b1aa3e02c245176d65ca44d5da406eb9750235e" upstream="dunfell-5.x.y"/>
 
-  <project name="meta-toradex-somfctdut.git" path="layers/meta-toradex-somfctdut" remote="tdx-int" revision="8d38d4494a2ebb2b1823e63eda14167cb5c8dac9" upstream="dunfell-5.x.y">
+  <project name="meta-toradex-somfctdut.git" path="layers/meta-toradex-somfctdut" remote="gitltdx" revision="8d38d4494a2ebb2b1823e63eda14167cb5c8dac9" upstream="dunfell-5.x.y">
     <copyfile dest="export_somfctdut" src="buildconf/export"/>
   </project>
 
-  <project name="meta-toradex-somfctcm.git" path="layers/meta-toradex-somfctcm" remote="tdx-int" revision="3042f5e92491218aea3712e8b52596091e3c3abc" upstream="dunfell-5.x.y">
+  <project name="meta-toradex-somfctcm.git" path="layers/meta-toradex-somfctcm" remote="gitltdx" revision="3042f5e92491218aea3712e8b52596091e3c3abc" upstream="dunfell-5.x.y">
     <copyfile dest="export_somfctcm" src="buildconf/export"/>
   </project>
 </manifest>
