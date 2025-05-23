@@ -6,11 +6,11 @@
   <include name="bsp/integration-tdx.xml" />
 
   <remote alias="repo" fetch="https://github.com/meta-qt5" name="githq"/>
-  <remote alias="repo" fetch="https://gitlab.int.toradex.com/rd/testing/som-fct" name="tdx-int"/>
+  <remote alias="repo" fetch="https://gitlab.com/toradex/rd/testing/som-fct" name="gitltdx"/>
 
   <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="644ebf220245bdc06e7696ccc90acc97a0dd2566" upstream="kirkstone"/>
   <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="kirkstone-6.x.y"/>
-  <project name="meta-toradex-somfctdut.git" path="layers/meta-toradex-somfctdut" remote="tdx-int" revision="kirkstone-6.x.y">
+  <project name="meta-toradex-somfctdut.git" path="layers/meta-toradex-somfctdut" remote="gitltdx" revision="kirkstone-6.x.y">
     <copyfile dest="export_somfctdut" src="buildconf/export"/>
   </project>
 </manifest>
