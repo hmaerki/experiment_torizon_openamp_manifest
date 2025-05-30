@@ -13,11 +13,11 @@
   <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="b72627047958f6b517760e32773cc00057c2499c" upstream="dunfell-5.x.y"/>
   <project dest-branch="dunfell-5.x.y" name="meta-toradex-tezi.git" path="layers/meta-toradex-tezi" remote="githt" revision="9b1aa3e02c245176d65ca44d5da406eb9750235e" upstream="dunfell-5.x.y"/>
 
-  <project name="meta-toradex-somfctdut.git" path="layers/meta-toradex-somfctdut" remote="gitltdx" revision="8d38d4494a2ebb2b1823e63eda14167cb5c8dac9" upstream="dunfell-5.x.y">
+  <project name="meta-toradex-somfctdut.git" path="layers/meta-toradex-somfctdut" remote="gitltdx" revision="99ce868a54b699170802bf7c8d368892694e6d72" upstream="dunfell-5.x.y">
     <copyfile dest="export_somfctdut" src="buildconf/export"/>
   </project>
 
-  <project name="meta-toradex-somfctcm.git" path="layers/meta-toradex-somfctcm" remote="gitltdx" revision="3042f5e92491218aea3712e8b52596091e3c3abc" upstream="dunfell-5.x.y">
+  <project name="meta-toradex-somfctcm.git" path="layers/meta-toradex-somfctcm" remote="gitltdx" revision="dd2f73c355d3216d2b9062e95520472c85c2d4d2" upstream="dunfell-5.x.y">
     <copyfile dest="export_somfctcm" src="buildconf/export"/>
   </project>
 </manifest>
