@@ -9,6 +9,11 @@
   <remote alias="repo" fetch="https://github.com/toradex" name="toradex"/>
   <remote alias="repo" fetch="https://github.com/torizon" name="torizon"/>
 
+  <!--
+    When doing a monthly or quarterly release, the hashes below must be copied from "torizon/integration.xml",
+    except for layer meta-toradex-torizon which in the integration manifest is referenced by branch but here
+    should be referenced by the corresponding hash.
+  -->
   <project name="meta-security" path="layers/meta-security" remote="yocto" revision="b9cf9cd639bc8d1b4828eb0bd012b71486d35176"/>
   <project name="meta-updater" path="layers/meta-updater" remote="uptane" revision="3d57c37509fef259c5a5c150b88466ff367e305f"/>
   <project name="meta-virtualization" path="layers/meta-virtualization" remote="yocto" revision="3e4dba95e6b5f5f68d0b3a5899b106c89da59428"/>

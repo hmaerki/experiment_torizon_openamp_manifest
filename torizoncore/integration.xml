@@ -3,17 +3,39 @@
   <include name="base/pinned.xml"/>
   <include name="bsp/pinned-nxp.xml"/>
   <include name="bsp/pinned-ti.xml"/>
+
+  <!--
+    non-feature-freeze: include "bsp/integration-tdx.xml"
+    feature-freeze:     include "bsp/pinned-tdx.xml"
+  -->
   <include name="bsp/integration-tdx.xml"/>
 
   <remote alias="repo" fetch="https://github.com/uptane" name="uptane"/>
   <remote alias="repo" fetch="https://github.com/toradex" name="toradex"/>
   <remote alias="repo" fetch="https://github.com/torizon" name="torizon"/>
 
+  <!--
+    Update the hashes of these external layers when leaving feaure freeze (to the tip of the
+    appropriate branches).
+  -->
   <project name="meta-security" path="layers/meta-security" remote="yocto" revision="b9cf9cd639bc8d1b4828eb0bd012b71486d35176"/>
   <project name="meta-updater" path="layers/meta-updater" remote="uptane" revision="3d57c37509fef259c5a5c150b88466ff367e305f"/>
   <project name="meta-virtualization" path="layers/meta-virtualization" remote="yocto" revision="5429fc0f5c2ebd7187e54913220f579417fcbaed"/>
+
+  <!--
+    meta-toradex-distro:
+    non-feature-freeze: revision set to "kirkstone-6.x.y" (branch name)
+    feature-freeze:     revision set to the same as in "tdxref/default.xml" (hash)
+  -->
   <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="kirkstone-6.x.y"/>
+
+  <!--
+    meta-toradex-security:
+    non-feature-freeze: revision set to "kirkstone-6.x.y" (branch name)
+    feature-freeze:     revision set to latest commit in "kirkstone-6.x.y" (hash)
+  -->
   <project name="meta-toradex-security" path="layers/meta-toradex-security" remote="toradex" revision="kirkstone-6.x.y"/>
+
   <project name="meta-toradex-torizon" path="layers/meta-toradex-torizon" remote="torizon" revision="kirkstone-6.x.y">
     <linkfile dest="setup-environment" src="scripts/setup-environment"/>
   </project>
