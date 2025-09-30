@@ -20,6 +20,8 @@ repo-sync:
   image: $CI_IMAGE
   variables:
     GIT_STRATEGY: clone
+  before_script:
+    - git config --global url."https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.com/toradex".insteadOf "https://gitlab.com/toradex"
   script:
     - ORIGIN=$(git remote get-url origin)
     - mkdir -p bin
@@ -33,13 +35,12 @@ repo-sync:
     - ../bin/repo sync
     - ../bin/repo init -u $ORIGIN -b $CI_MERGE_REQUEST_TARGET_BRANCH_NAME -m tdxref/next.xml
     - ../bin/repo sync
-    # Temporary disable ci for tester due to move to gitlab.com
-    # - ../bin/repo init -u $ORIGIN -b $CI_MERGE_REQUEST_TARGET_BRANCH_NAME -m tester/default.xml
-    # - ../bin/repo sync
-    # - ../bin/repo init -u $ORIGIN -b $CI_MERGE_REQUEST_TARGET_BRANCH_NAME -m tester/integration.xml
-    # - ../bin/repo sync
-    # - ../bin/repo init -u $ORIGIN -b $CI_MERGE_REQUEST_TARGET_BRANCH_NAME -m tester/next.xml
-    # - ../bin/repo sync
+    - ../bin/repo init -u $ORIGIN -b $CI_MERGE_REQUEST_TARGET_BRANCH_NAME -m tester/default.xml
+    - ../bin/repo sync
+    - ../bin/repo init -u $ORIGIN -b $CI_MERGE_REQUEST_TARGET_BRANCH_NAME -m tester/integration.xml
+    - ../bin/repo sync
+    - ../bin/repo init -u $ORIGIN -b $CI_MERGE_REQUEST_TARGET_BRANCH_NAME -m tester/next.xml
+    - ../bin/repo sync
     - ../bin/repo init -u $ORIGIN -b $CI_MERGE_REQUEST_TARGET_BRANCH_NAME -m tezi/default.xml
     - ../bin/repo sync
     - ../bin/repo init -u $ORIGIN -b $CI_MERGE_REQUEST_TARGET_BRANCH_NAME -m tezi/integration.xml
