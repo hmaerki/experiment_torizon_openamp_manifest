@@ -14,10 +14,6 @@
   <remote alias="repo" fetch="https://github.com/toradex" name="toradex"/>
   <remote alias="repo" fetch="https://github.com/torizon" name="torizon"/>
 
-  <!--
-    Update the hashes of these external layers when leaving feaure freeze (to the tip of the
-    appropriate branches).
-  -->
   <project name="meta-security" path="layers/meta-security" remote="yocto" revision="b9cf9cd639bc8d1b4828eb0bd012b71486d35176"/>
   <project name="meta-updater" path="layers/meta-updater" remote="uptane" revision="3d57c37509fef259c5a5c150b88466ff367e305f"/>
   <project name="meta-virtualization" path="layers/meta-virtualization" remote="yocto" revision="c474ae21b11a816be607eb7b44d2cf77d1125bce"/>
