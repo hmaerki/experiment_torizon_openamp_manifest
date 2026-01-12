@@ -4,11 +4,11 @@
   <include name="bsp/pinned-nxp.xml" />
   <include name="bsp/pinned-tdx.xml" />
 
-  <remote alias="repo" fetch="https://github.com/meta-qt5" name="githq"/>
+  <remote alias="repo" fetch="https://code.qt.io/yocto" name="gitqt"/>
   <remote alias="repo" fetch="https://github.com/toradex" name="githt"/>
   <remote alias="repo" fetch="https://gitlab.com/toradex/rd/testing/som-fct" name="gitltdx"/>
 
-  <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="5ef3a0ffd3324937252790266e2b2e64d33ef34f" upstream="dunfell"/>
+  <project name="meta-qt6.git" path="layers/meta-qt6" remote="gitqt" revision="a745b50e63859873a63a8484715e7915f97a626e" upstream="6.5"/>
   <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="8ffadb517be04a0b19ef1f5d5299a8c581f87383" upstream="dunfell-5.x.y"/>
   <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="b72627047958f6b517760e32773cc00057c2499c" upstream="dunfell-5.x.y"/>
   <project dest-branch="dunfell-5.x.y" name="meta-toradex-tezi.git" path="layers/meta-toradex-tezi" remote="githt" revision="9b1aa3e02c245176d65ca44d5da406eb9750235e" upstream="dunfell-5.x.y"/>
