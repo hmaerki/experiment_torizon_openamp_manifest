@@ -24,12 +24,13 @@ repo-sync:
     - git config --global url."https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.com/toradex".insteadOf "https://gitlab.com/toradex"
   script:
     - ORIGIN=$(git remote get-url origin)
+    - cd ..
     - mkdir -p bin
     - wget -O bin/repo https://commondatastorage.googleapis.com/git-repo-downloads/repo
     - chmod a+x bin/repo
-    - mkdir -p workspace
-    - cd workspace
+    - mkdir -p workspace && cd workspace
     - ../bin/repo init -u $ORIGIN -b $CI_MERGE_REQUEST_TARGET_BRANCH_NAME -m tdxref/default.xml
+    - cp -rf ../toradex-manifest/* .repo/manifests/
     - ../bin/repo sync
     - ../bin/repo init -u $ORIGIN -b $CI_MERGE_REQUEST_TARGET_BRANCH_NAME -m tdxref/integration.xml
     - ../bin/repo sync
