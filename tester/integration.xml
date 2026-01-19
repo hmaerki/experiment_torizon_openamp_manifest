@@ -5,13 +5,11 @@
   <include name="bsp/integration-tdx.xml" />
 
   <remote alias="repo" fetch="https://code.qt.io/yocto" name="gitqt"/>
-  <remote alias="repo" fetch="https://github.com/toradex" name="githt"/>
   <remote alias="repo" fetch="https://gitlab.com/toradex/rd/testing/som-fct" name="gitltdx"/>
 
   <project name="meta-qt6.git" path="layers/meta-qt6" remote="gitqt" revision="a745b50e63859873a63a8484715e7915f97a626e" upstream="6.5"/>
   <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="dunfell-5.x.y"/>
   <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="dunfell-5.x.y"/>
-  <project name="meta-toradex-tezi.git" path="layers/meta-toradex-tezi" remote="githt" revision="dunfell-5.x.y"/>
 
   <project name="meta-toradex-somfctdut.git" path="layers/meta-toradex-somfctdut" remote="gitltdx" revision="dunfell-5.x.y">
     <copyfile dest="export_somfctdut" src="buildconf/export"/>
