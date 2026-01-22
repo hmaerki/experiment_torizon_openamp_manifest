@@ -8,7 +8,7 @@
     non-feature-freeze: include "bsp/integration-tdx.xml"
     feature-freeze:     include "bsp/pinned-tdx.xml"
   -->
-  <include name="bsp/pinned-tdx.xml"/>
+  <include name="bsp/integration-tdx.xml"/>
 
   <remote alias="repo" fetch="https://github.com/uptane" name="uptane"/>
   <remote alias="repo" fetch="https://github.com/toradex" name="toradex"/>
@@ -23,14 +23,14 @@
     non-feature-freeze: revision set to "kirkstone-6.x.y" (branch name)
     feature-freeze:     revision set to the same as in "tdxref/default.xml" (hash)
   -->
-  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="15903d9194caeee2acab9ebecc9fb689b05705fc"/>
+  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="kirkstone-6.x.y"/>
 
   <!--
     meta-toradex-security:
     non-feature-freeze: revision set to "kirkstone-6.x.y" (branch name)
     feature-freeze:     revision set to latest commit in "kirkstone-6.x.y" (hash)
   -->
-  <project name="meta-toradex-security" path="layers/meta-toradex-security" remote="toradex" revision="b7f9c7408677c7647d4bbbde5641b8c0b2acdb5a"/>
+  <project name="meta-toradex-security" path="layers/meta-toradex-security" remote="toradex" revision="kirkstone-6.x.y"/>
 
   <project name="meta-toradex-torizon" path="layers/meta-toradex-torizon" remote="torizon" revision="kirkstone-6.x.y">
     <linkfile dest="setup-environment" src="scripts/setup-environment"/>
