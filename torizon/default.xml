@@ -8,12 +8,15 @@
   <remote alias="repo" fetch="https://github.com/toradex" name="toradex"/>
   <remote alias="repo" fetch="https://github.com/torizon" name="torizon"/>
   <remote alias="repo" fetch="https://github.com/iris-GmbH" name="iris"/>
+  <remote alias="repo" fetch="https://github.com/nxp-imx" name="nxp"/>
 
   <project name="meta-security" path="layers/meta-security" remote="yocto" revision="1f7eeb8e84811fa79b98f236ade42dc52d44cfc6"/>
   <!-- meta-updater layer has a fixed hash due to it not having a walnascar branch, and master branch having no compatibility with walnascar after this commit -->
   <project name="meta-updater" path="layers/meta-updater" remote="uptane" revision="b277f444f66e8f10eb725a14b5bcceb47dfeb445"/>
   <project name="meta-virtualization" path="layers/meta-virtualization" remote="yocto" revision="38008d99d5bedc7d9769b9e95e3d6019a2df1698"/>
   <project name="meta-cyclonedx" path="layers/meta-cyclonedx" remote="iris" revision="71e57f8203fd612d1f98396555af5c658847c6b9"/>
+  <project name="meta-imx" path="layers/meta-imx" remote="nxp" revision="1cfbbb8f9ce1d6071775ea6083b79d98597c8206"/>
+  <project name="meta-freescale-ml" path="layers/meta-freescale-ml" remote="githf" revision="b364d313706d247fadf12feb68136559d7ff3d52"/>
   <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="c9bd57bd65a1bdc9c7a52e6084fc4eaff508dd5c"/>
   <project name="meta-toradex-torizon" path="layers/meta-toradex-torizon" remote="torizon" revision="1e02b1b66555f13ac75155a22717019c2775f024">
     <linkfile dest="setup-environment" src="scripts/setup-environment"/>
