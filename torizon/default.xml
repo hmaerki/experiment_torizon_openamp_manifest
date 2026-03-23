@@ -17,8 +17,8 @@
   <project name="meta-cyclonedx" path="layers/meta-cyclonedx" remote="iris" revision="71e57f8203fd612d1f98396555af5c658847c6b9"/>
   <project name="meta-imx" path="layers/meta-imx" remote="nxp" revision="1cfbbb8f9ce1d6071775ea6083b79d98597c8206"/>
   <project name="meta-freescale-ml" path="layers/meta-freescale-ml" remote="githf" revision="b364d313706d247fadf12feb68136559d7ff3d52"/>
-  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="c9bd57bd65a1bdc9c7a52e6084fc4eaff508dd5c"/>
-  <project name="meta-toradex-torizon" path="layers/meta-toradex-torizon" remote="torizon" revision="1e02b1b66555f13ac75155a22717019c2775f024">
+  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="24b76ddb1150a28ad49faf7a997bfe317e150276"/>
+  <project name="meta-toradex-torizon" path="layers/meta-toradex-torizon" remote="torizon" revision="d0ec1521e17f8d088c4dfd50a17f110155b42a65">
     <linkfile dest="setup-environment" src="scripts/setup-environment"/>
   </project>
 </manifest>
