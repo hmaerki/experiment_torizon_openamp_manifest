@@ -14,12 +14,12 @@
     except for layer meta-toradex-torizon which in the integration manifest is referenced by branch but here
     should be referenced by the corresponding hash.
   -->
-  <project name="meta-security" path="layers/meta-security" remote="yocto" revision="b9cf9cd639bc8d1b4828eb0bd012b71486d35176"/>
+  <project name="meta-security" path="layers/meta-security" remote="yocto" revision="2ad57a27337ecba58e59ed7aa6fe9769d27804ac"/>
   <project name="meta-updater" path="layers/meta-updater" remote="uptane" revision="3d57c37509fef259c5a5c150b88466ff367e305f"/>
   <project name="meta-virtualization" path="layers/meta-virtualization" remote="yocto" revision="c474ae21b11a816be607eb7b44d2cf77d1125bce"/>
-  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="15903d9194caeee2acab9ebecc9fb689b05705fc"/>
+  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="4d45027bc563cbe14811d5cb27c56c7cadcdb195"/>
   <project name="meta-toradex-security" path="layers/meta-toradex-security" remote="toradex" revision="b7f9c7408677c7647d4bbbde5641b8c0b2acdb5a"/>
-  <project name="meta-toradex-torizon" path="layers/meta-toradex-torizon" remote="torizon" revision="d585dfe69d6345d1c4dd31f20efdecfacb9e38ad">
+  <project name="meta-toradex-torizon" path="layers/meta-toradex-torizon" remote="torizon" revision="7a99332a7a7fbf0dc345214719dd6326c79e9f38">
     <linkfile dest="setup-environment" src="scripts/setup-environment"/>
   </project>
 </manifest>
