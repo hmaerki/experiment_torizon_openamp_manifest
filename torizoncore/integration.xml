@@ -16,7 +16,7 @@
 
   <project name="meta-security" path="layers/meta-security" remote="yocto" revision="2ad57a27337ecba58e59ed7aa6fe9769d27804ac"/>
   <project name="meta-updater" path="layers/meta-updater" remote="uptane" revision="3d57c37509fef259c5a5c150b88466ff367e305f"/>
-  <project name="meta-virtualization" path="layers/meta-virtualization" remote="yocto" revision="c474ae21b11a816be607eb7b44d2cf77d1125bce"/>
+  <project name="meta-virtualization" path="layers/meta-virtualization" remote="yocto" revision="92b6abcdfb6f12c4931247f0f29aaf5331984525"/>
 
   <!--
     meta-toradex-distro:
