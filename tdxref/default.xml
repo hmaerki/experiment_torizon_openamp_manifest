@@ -10,7 +10,7 @@
   <project name="meta-qt5.git" path="layers/meta-qt5" remote="githq" revision="644ebf220245bdc06e7696ccc90acc97a0dd2566" upstream="kirkstone"/>
   <project name="meta-security" path="layers/meta-security" remote="yocto" revision="2ad57a27337ecba58e59ed7aa6fe9769d27804ac" upstream="kirkstone"/>
   <project name="meta-toradex-demos.git" path="layers/meta-toradex-demos" remote="tdx" revision="c63a819ec8d62e932d09d45ea13a8b0268faca4a" upstream="kirkstone-6.x.y"/>
-  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="4d45027bc563cbe14811d5cb27c56c7cadcdb195" upstream="kirkstone-6.x.y">
+  <project name="meta-toradex-distro.git" path="layers/meta-toradex-distro" remote="tdx" revision="60f07fba7f2f972e50638952636faef234e5561b" upstream="kirkstone-6.x.y">
     <copyfile dest="export" src="buildconf/export"/>
   </project>
 </manifest>
