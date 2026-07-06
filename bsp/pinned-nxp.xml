@@ -5,5 +5,5 @@
   <project name="meta-arm" path="layers/meta-arm" remote="yocto" revision="b68089f2648d712b9406d0e88c71758913267f81" upstream="walnascar"/>
   <project name="meta-freescale-3rdparty.git" path="layers/meta-freescale-3rdparty" remote="githf" revision="5ba0c7cfdba9bc7c4495f0cdf1c195f45b7164a6" upstream="walnascar"/>
   <project name="meta-freescale-distro.git" path="layers/meta-freescale-distro" remote="githf" revision="b9c3536b68271c420fe5de36fc284781ceaa32ab" upstream="walnascar"/>
-  <project name="meta-freescale.git" path="layers/meta-freescale" remote="githf" revision="7815951fa743abaaccbcfd0377b377c399aa23e6" upstream="walnascar"/>
+  <project name="meta-freescale.git" path="layers/meta-freescale" remote="githf" revision="0e1c23eed01d36b2e9b46e17f2e5045bd997a9c1" upstream="walnascar"/>
 </manifest>
